@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <main class="w-full h-screen flex">
+      <toolbar class="w-16"></toolbar>
+      <canvas-field class="w-full"></canvas-field>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Toolbar from './components/Toolbar.vue'
+import CanvasField from './components/CanvasField.vue'
 
 export default {
-  name: 'App',
+  name: 'VueDitor',
   components: {
-    HelloWorld
+    Toolbar,
+    CanvasField
   }
 }
 </script>
